@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogActivity">
+
+    <Button
+        android:id="@+id/common_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickCommonBtn"
+        android:text="common dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/list_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickListBtn"
+        android:text="list dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/common_dialog" />
+
+    <Button
+        android:id="@+id/single_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSingleChoiceBtn"
+        android:text="single choice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_dialog" />
+
+    <Button
+        android:id="@+id/multiple_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickMultiChoicesBtn"
+        android:text="multiple choice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/single_choice" />
+
+    <Button
+        android:id="@+id/customized_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickCustomizedCtn"
+        android:text="customized dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multiple_choice" />
+
+    <Button
+        android:id="@+id/popup_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickPopupDownBtn"
+        android:text="popup drop down"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customized_dialog" />
+
+    <Button
+        android:id="@+id/popup_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickPopupLocationBtn"
+        android:text="popup location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_drop_down" />
+
+    <Button
+        android:id="@+id/activity_as_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickActivityAsDialogBtn"
+        android:text="activity as dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popup_location" />
+
+    <Button
+        android:id="@+id/date_picker_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date picker dialog"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickDatePickerDialogBtn"/>
+
+    <Button
+        android:id="@+id/time_picker_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time picker dialog"
+        app:layout_constraintTop_toBottomOf="@id/date_picker_dialog"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickTimePickerDialogBtn"/>
+
+    <Button
+        android:id="@+id/progress_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="progress spinner"
+        app:layout_constraintTop_toBottomOf="@id/time_picker_dialog"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickProgressSpinnerBtn"/>
+
+    <Button
+        android:id="@+id/progress_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="progress horizontal"
+        app:layout_constraintTop_toBottomOf="@id/progress_spinner"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clickProgressHorizontalBtn"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
